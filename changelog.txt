@@ -1,0 +1,7 @@
+v24.1.0.1:
+    - Added Aerial playstyle to player editor
+    - Fixed:
+        - Misc Featrues -> GTN -> Reveal Player Data
+
+v24.1.0.0:
+    - First working version.
