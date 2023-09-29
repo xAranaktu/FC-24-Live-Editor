@@ -1,0 +1,11 @@
+v24.1.0.2:
+    - Fixed Perfect Timed Shot
+    - Fixed crash when saving changes in team editor (also diabled formation editor and transfer bans for now)
+
+v24.1.0.1:
+    - Added Aerial playstyle to player editor
+    - Fixed:
+        - Misc Featrues -> GTN -> Reveal Player Data
+
+v24.1.0.0:
+    - First working version.
