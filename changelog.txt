@@ -1,3 +1,10 @@
+v24.1.0.6:
+    -
+
+v24.1.0.5:
+    - Added "Potential" column in "Transfer History"
+    - Fixed "Unsackable"
+
 v24.1.0.4:
     - Added "Transfer History"
     - Added "Transfer Bans"
