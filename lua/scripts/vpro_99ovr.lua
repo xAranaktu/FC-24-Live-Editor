@@ -116,6 +116,7 @@ function handle_vpro_reset(events_manager, event_id, event)
         event_id == ENUM_CM_EVENT_MSG_USER_MATCH_COMPLETED or
         event_id == ENUM_CM_EVENT_MSG_USER_MATCH_COMPLETED_IN_TOURNAMENT or
         event_id == ENUM_CM_EVENT_MSG_USER_INTERNATIONAL_MATCH_COMPLETED or
+        event_id == ENUM_CM_EVENT_MSG_ENTERED_HUB_FIRST_TIME or
         event_id == ENUM_CM_EVENT_MSG_POST_LOAD_PREPARE
     ) then
         set_99ovr()

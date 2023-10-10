@@ -1,5 +1,8 @@
 -- This script will automatically extend the contracts of players in your team
 -- 4 years by default
+
+require 'imports/other/helpers'
+
 local new_contract_length = 12 * 4 -- 4 years
 
 -- Don't Touch anything below
