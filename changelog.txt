@@ -1,3 +1,9 @@
+v24.1.0.6:
+    - Fixes in "vpro_99ovr.lua" script:
+        - Script shouldn't overwrite player nationality anymore
+        - Attributes shouldn't reset after training session anymore
+    - Now you can permanently change player nationality by changing it in player editor
+
 v24.1.0.5:
     - Added "Potential" column in "Transfer History"
     - Fixed "Unsackable"
