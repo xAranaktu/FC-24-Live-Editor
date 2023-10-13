@@ -1,44 +1,33 @@
 v24.1.0.7:
-    - Added "Coaches"
+    - Fixed Perfect Timed Shot
+    - Added Formation Editor
 
 v24.1.0.6:
-    - Added to "Play As Player":
-        - Personality:
-            - Unlock All Slots for Playstyles
-            - Pointers for Maverick, Heartbeat and Virtuoso
+    - Fixes in "vpro_99ovr.lua" script:
+        - Script shouldn't overwrite player nationality anymore
+        - Attributes shouldn't reset after training session anymore
+    - Now you can permanently change player nationality by changing it in player editor
 
 v24.1.0.5:
-    - Added to "Non-CM Related":
-        - "Free Fly Camera"
-        - "Game Settings" -> "Camera"
+    - Added "Potential" column in "Transfer History"
+    - Fixed "Unsackable"
 
 v24.1.0.4:
-    - Fixed Editing player release clause
-    - Fixed "Allow Loan approach" script
-    - Fixed "export_season_stats.lua" script
-    - Added "Nation Reputation" to "Play As Player"
+    - Added "Transfer History"
+    - Added "Transfer Bans"
+    - Added option to assign playstyles to "vpro_99ovr.lua" script
 
 v24.1.0.3:
-    - Fixed pointer for "Transfer Budget"
-    - Fixed all scripts under "Youth Academy"
-    - Fixed all scripts under "Match Settings"
+    - Work with Title Update 2
 
 v24.1.0.2:
-    - Added "Play As Player":
-        - Finances
-            - Wage
-            - Funds
-        - Reputation
-            - Manager Reputation
-            - Squad Role
-        - 999 Skill Points
-    - Fixed crash at beginning of second half caused by Gameplay script.
+    - Fixed Perfect Timed Shot
+    - Fixed crash when saving changes in team editor (also diabled formation editor and transfer bans for now)
 
 v24.1.0.1:
-    - Added "Playstyles" & "Playstyles+" to player editor.
-    - Fixed "Job Offers" script
-    - Fixed "Gameplay" script
-    - Fixed edited attributes reset in manager career mode after training session
+    - Added Aerial playstyle to player editor
+    - Fixed:
+        - Misc Featrues -> GTN -> Reveal Player Data
 
 v24.1.0.0:
-    - First working version
+    - First working version.
