@@ -34,7 +34,7 @@ while teamplayerlinks_current_record > 0 do
         PlayerCaptureAddPlayer(playerid, teamid)
     end
 
-    teamplayerlinks_current_record = leagueteamlinks_table:GetNextValidRecord()
+    teamplayerlinks_current_record = teamplayerlinks_table:GetNextValidRecord()
 end
 
 -- Start Capturing
