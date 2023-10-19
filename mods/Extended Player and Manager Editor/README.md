@@ -44,9 +44,9 @@ There is tattoo tab also in players editor, but for 99% it won't work.
 **How to install:**
 ```
 1. Unzip archive
-2. Move the root folder to C:\FC 24 Live Editor\mods (replace files if needed) <https://i.imgur.com/8BOzvnu.png>
+2. Move the root folder to C:\FC 24 Live Editor\mods (replace files if needed) <https://i.imgur.com/AVlGGKZ.png>
 3. Run the game & Live Editor
 ```
 
-![](https://i.imgur.com/8BOzvnu.png)
+![](https://i.imgur.com/AVlGGKZ.png)
 ![](https://i.imgur.com/ICsTnBp.png)
