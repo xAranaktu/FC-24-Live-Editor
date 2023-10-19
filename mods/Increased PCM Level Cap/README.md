@@ -24,4 +24,5 @@ IT DOESN'T GIVE YOU 99 LEVEL...
 3. Run the game & Live Editor
 ```
 
-https://i.imgur.com/7puQBqY.png
+![](https://i.imgur.com/AVlGGKZ.png)
+![](https://i.imgur.com/7puQBqY.png)
