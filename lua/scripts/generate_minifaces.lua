@@ -43,10 +43,10 @@ local leagueteamlinks_current_record = leagueteamlinks_table:GetFirstRecord()
 local leagueid = 0
 local teamid = 0
 while leagueteamlinks_current_record > 0 do
-    leagueid = leagueteamlinks_table:GetRecordFieldValue(current_record, "leagueid")
+    leagueid = leagueteamlinks_table:GetRecordFieldValue(leagueteamlinks_current_record, "leagueid")
 
     if BLACKLISTED_LEAGUES[leagueid] then
-        teamid = leagueteamlinks_table:GetRecordFieldValue(current_record, "teamid")
+        teamid = leagueteamlinks_table:GetRecordFieldValue(leagueteamlinks_current_record, "teamid")
         BLACKLISTED_TEAMS[teamid] = true
     end
 
@@ -59,13 +59,13 @@ local teamplayerlinks_current_record = teamplayerlinks_table:GetFirstRecord()
 
 local playerid = 0
 while teamplayerlinks_current_record > 0 do
-    teamid = teamplayerlinks_table:GetRecordFieldValue(current_record, "teamid")
+    teamid = teamplayerlinks_table:GetRecordFieldValue(teamplayerlinks_current_record, "teamid")
     if not BLACKLISTED_TEAMS[teamid] then
-        playerid = teamplayerlinks_table:GetRecordFieldValue(current_record, "playerid")
+        playerid = teamplayerlinks_table:GetRecordFieldValue(teamplayerlinks_current_record, "playerid")
         PlayerCaptureAddPlayer(playerid, teamid)
     end
 
-    teamplayerlinks_current_record = leagueteamlinks_table:GetNextValidRecord()
+    teamplayerlinks_current_record = teamplayerlinks_table:GetNextValidRecord()
 end
 
 -- Start Capturing
