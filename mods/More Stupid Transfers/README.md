@@ -27,7 +27,7 @@ Basically, this "mod" should increase the transfer activity which means more tra
 **How to install:**
 ```
 1. Unzip archive
-2. Move the root folder to C:\FIFA 23 Live Editor\mods (replace files if needed) <https://i.imgur.com/AVlGGKZ.png>
+2. Move the root folder to C:\FC 24 Live Editor\mods (replace files if needed) <https://i.imgur.com/AVlGGKZ.png>
 3. Run the game & Live Editor
 
 ```
