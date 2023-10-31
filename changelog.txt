@@ -1,3 +1,12 @@
+v24.1.0.8:
+    - Launcher will now display your game title update.
+    - Updated bodytypecodes
+    - Added to Players Editor:
+        - Other -> Team selection bias
+        - Other -> Team selection bias position
+    - Added to Formation Editor:
+        - Freeze Lineup
+
 v24.1.0.7:
     - Fixed Perfect Timed Shot
     - Added Formation Editor
