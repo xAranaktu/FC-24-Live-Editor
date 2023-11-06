@@ -1,6 +1,6 @@
 **Extended Player & Manager Editor**
 
-**Mod Version**: 1.0
+**Mod Version**: 1.1
 
 
 ```
@@ -41,12 +41,19 @@ There is tattoo tab also in players editor, but for 99% it won't work.
     - root\Legacy\data\avatar\avatarcustomizationcfg_tournament_editplayers.json
 ```
 
+**Changes:**
+```
+1.1:
+    - Fixed overallrating drop
+    - Fixed crash when trying to open "Athletic->Position" panel.
+    - Disabled option to edit player commentary to avoid game crashes.
+```
+
 **How to install:**
 ```
 1. Unzip archive
-2. Move the root folder to C:\FC 24 Live Editor\mods (replace files if needed) <https://i.imgur.com/AVlGGKZ.png>
+2. Move the root folder to C:\FC 24 Live Editor\mods (replace files if needed) <https://i.imgur.com/8BOzvnu.png>
 3. Run the game & Live Editor
 ```
 
-![](https://i.imgur.com/AVlGGKZ.png)
-![](https://i.imgur.com/ICsTnBp.png)
+https://i.imgur.com/ICsTnBp.png
