@@ -56,4 +56,4 @@ There is tattoo tab also in players editor, but for 99% it won't work.
 3. Run the game & Live Editor
 ```
 
-https://i.imgur.com/ICsTnBp.png
+![](https://i.imgur.com/ICsTnBp.png)
