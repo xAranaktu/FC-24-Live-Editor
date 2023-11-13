@@ -1,3 +1,9 @@
+v24.1.0.9:
+    - Fixed game crash on load career save when in-game language is other than English
+    - Fixed game crash occuring on attempt to loan player with the tool.
+    - Fixed miniface generator capturing goalkeepers with their team home jersey instead of gk jersey.
+    - Fixed issue which caused some legacy files not show in "File Browser" (around 100 of them, like youth_scout.ini). Now the number of legacy files found by LE should match with what FIFA Editor Tool show.
+
 v24.1.0.8:
     - Launcher will now display your game title update.
     - Updated bodytypecodes
