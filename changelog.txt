@@ -1,3 +1,10 @@
+v24.1.1.0:
+    - Added 7 hidden traits (aka playstyles) to player editor. (Thanks to tokke001)
+    - Creating job offer will now immediately spawn new offer to your inbox. You don't need to wait a few days till it arrive now.
+    - It's now possible to generate miniface for VPRO
+    - It's now possible to import miniface for VPRO (must be 256x256 PNG!)
+    - Fixed game crashes after saving changes in team editor and proceeding to match
+
 v24.1.0.9:
     - Fixed game crash on load career save when in-game language is other than English
     - Fixed game crash occuring on attempt to loan player with the tool.
