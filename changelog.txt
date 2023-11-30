@@ -1,3 +1,10 @@
+v24.1.1.1:
+    - Added "lua_autorun" folder to "C:\FC 24 Live Editor\mods". You can put there your lua scripts which will be executed when you start the game.
+    - Added 10 new lua scripts (auto_max_user_team_fitness, auto_max_vpro_fitness, vpro_always_starter and a few more ported from Cheat Table)
+    - Game "Advanced Launch Options" can be now set in Live Editor settings
+    - It's now possible to change manager name in already started career save.
+    - Fixed game crash occurring when loading some large modified legacy files (for example overlays above 2MB).
+
 v24.1.1.0:
     - Added 7 hidden traits (aka playstyles) to player editor. (Thanks to tokke001)
     - Creating job offer will now immediately spawn new offer to your inbox. You don't need to wait a few days till it arrive now.
