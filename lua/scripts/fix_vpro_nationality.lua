@@ -1,7 +1,10 @@
 require 'imports/services/enums'
+FCECareerModeUserManager = require 'imports/career_mode/FCECareerModeUserManager'
 
 -- You can change the ID if you want to apply that to other player
-local VPRO_PLAYERID = 30999
+local cm_user_mgr = FCECareerModeUserManager:new()
+
+local VPRO_PLAYERID = cm_user_mgr:GetPAPID()
 local nationality_id = 27 -- Italy
 
 -- Get Players Table
@@ -15,10 +18,13 @@ while current_record > 0 do
         players_table:SetRecordFieldValue(current_record, "nationality", nationality_id)
 
         -- Write new nationality in VProService
-        MEMORY:WriteShort(
-            MEMORY:ReadPointer(GetPlugin(ENUM_djb2VProServiceVPRO_CLSS) + 0x18) + 0x343D4,
-            nationality_id
-        )
+        if (VPRO_PLAYERID = 30999) {
+            MEMORY:WriteShort(
+                MEMORY:ReadPointer(GetPlugin(ENUM_djb2VProServiceVPRO_CLSS) + 0x18) + 0x343D4,
+                nationality_id
+            )
+        }
+
         break
     end
 

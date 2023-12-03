@@ -72,6 +72,7 @@ local count = 0
 local has_dev_plan = false
 local playerid = 0
 while current_record > 0 do
+    has_dev_plan = false
     playerid = players_table:GetRecordFieldValue(current_record, "playerid")
     
     -- In career mode developement plans has higher prio than players table
