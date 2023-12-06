@@ -1,3 +1,6 @@
+v24.1.1.2:
+    - Work with Title Update 6
+
 v24.1.1.1:
     - Added "lua_autorun" folder to "C:\FC 24 Live Editor\mods". You can put there your lua scripts which will be executed when you start the game.
     - Added 10 new lua scripts (auto_max_user_team_fitness, auto_max_vpro_fitness, vpro_always_starter and a few more ported from Cheat Table)
