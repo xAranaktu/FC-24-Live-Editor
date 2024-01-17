@@ -1,6 +1,6 @@
 require 'imports/career_mode/enums'
 require 'imports/other/playstyles_enum'
-FCECareerModeUserManager = require 'imports/career_mode/FCECareerModeUserManager'
+FCECareerModeUserManager = require 'imports/career_mode/fcecareermodeusermanager'
 
 -- Script that will keep your VPRO player in starting XI
 

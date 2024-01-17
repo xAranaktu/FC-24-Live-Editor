@@ -6,9 +6,8 @@ require 'imports/services/enums'
 local TABLE = require 'imports/t3db/table'
 local DB = {}
 
-function DB:new(o)
-    o = o or {}
-    setmetatable(o, self)
+function DB:new()
+    local o = setmetatable({}, self)
 
     -- lua metatable
     self.__index = self
@@ -16,7 +15,7 @@ function DB:new(o)
 
     self:Init()
 
-    return o;
+    return o
 end
 
 ---

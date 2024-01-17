@@ -6,7 +6,7 @@ require 'imports/core/common'
 
 -- List up to date with Title Update 6
 local valid_headmodels = {
-    [27] = true,  -- Joe Cole
+        [27] = true,  -- Joe Cole
     [51] = true,  -- Alan Shearer
     [240] = true,  -- Roy Keane
     [246] = true,  -- Paul Scholes

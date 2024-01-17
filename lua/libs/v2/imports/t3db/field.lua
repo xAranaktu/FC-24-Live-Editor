@@ -2,9 +2,8 @@ MEMORY = require 'imports/core/memory'
 LOGGER = require 'imports/core/logger'
 local FIELD = {}
 
-function FIELD:new(o)
-    o = o or {}
-    setmetatable(o, self)
+function FIELD:new()
+    local o = setmetatable({}, self)
 
     -- lua metatable
     self.__index = self
@@ -12,7 +11,7 @@ function FIELD:new(o)
 
     self:Init()
 
-    return o;
+    return o
 end
 
 ---

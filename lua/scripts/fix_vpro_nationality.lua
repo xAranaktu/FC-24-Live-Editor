@@ -1,5 +1,5 @@
 require 'imports/services/enums'
-FCECareerModeUserManager = require 'imports/career_mode/FCECareerModeUserManager'
+FCECareerModeUserManager = require 'imports/career_mode/fcecareermodeusermanager'
 
 -- You can change the ID if you want to apply that to other player
 local cm_user_mgr = FCECareerModeUserManager:new()

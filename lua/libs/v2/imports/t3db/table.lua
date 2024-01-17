@@ -5,8 +5,7 @@ local FIELD = require 'imports/t3db/field'
 local TABLE = {}
 
 function TABLE:new(o)
-    o = o or {}
-    setmetatable(o, self)
+    local o = setmetatable({}, self)
 
     -- lua metatable
     self.__index = self
@@ -14,7 +13,7 @@ function TABLE:new(o)
 
     self:Init()
 
-    return o;
+    return o
 end
 
 ---

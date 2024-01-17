@@ -2,7 +2,7 @@
 
 require 'imports/career_mode/enums'
 require 'imports/career_mode/helpers'
-FCECareerModeUserManager = require 'imports/career_mode/FCECareerModeUserManager'
+FCECareerModeUserManager = require 'imports/career_mode/fcecareermodeusermanager'
 
 function MaxVPROFitness__OnEvent(events_manager, event_id, event)
     if (

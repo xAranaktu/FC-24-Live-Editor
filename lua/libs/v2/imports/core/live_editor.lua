@@ -1,13 +1,13 @@
 MEMORY = require 'imports/core/memory'
 LOGGER = require 'imports/core/logger'
 local DB = require 'imports/t3db/db'
+local GameplayAttribulatorManager = require 'imports/gameplay/gp_attribulator_manager'
 local PLAYERS_MANAGER = require 'imports/core/managers/players_manager'
 
 local LIVE_EDITOR = {}
 
-function LIVE_EDITOR:new(o)
-    o = o or {}
-    setmetatable(o, self)
+function LIVE_EDITOR:new()
+    local o = setmetatable({}, self)
 
     -- lua metatable
     self.__index = self
@@ -23,6 +23,9 @@ function LIVE_EDITOR:new(o)
     -- DB
     self.db = DB:new()
 
+    -- Gameplay Attribulator Manager
+    self.gameplay_attribulator_manager = GameplayAttribulatorManager:new()
+
     -- Players Manager
     self.players_manager = PLAYERS_MANAGER:new()
 
@@ -31,7 +34,7 @@ function LIVE_EDITOR:new(o)
 
     self:Init()
 
-    return o;
+    return o
 end
 
 function LIVE_EDITOR:Init()
@@ -42,6 +45,7 @@ function LIVE_EDITOR:Init()
     self.game_size = LE_GAME_MODULE_SIZE
     self.game_name = LE_GAME_MODULE_NAME
 
+    self.gameplay_attribulator_manager:Init()
     self.players_manager:Init(self.db)
 end
 

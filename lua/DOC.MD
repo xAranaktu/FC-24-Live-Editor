@@ -1,6 +1,6 @@
 ﻿# FIFA LIVE EDITOR LUA DOCUMENTATION
 
-**PLEASE SWTICH TO [LUA API v2](https://github.com/xAranaktu/FIFA-23-Live-Editor/wiki/LUA-API-v2)**
+**PLEASE SWTICH TO [LUA API v2](https://github.com/xAranaktu/FC-24-Live-Editor/wiki/LUA-API-v2)**
 
 **Functions listed on this page may soon stop working.**
 

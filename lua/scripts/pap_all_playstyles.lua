@@ -1,6 +1,6 @@
 require 'imports/career_mode/enums'
 require 'imports/other/playstyles_enum'
-FCECareerModeUserManager = require 'imports/career_mode/FCECareerModeUserManager'
+FCECareerModeUserManager = require 'imports/career_mode/fcecareermodeusermanager'
 
 -- Script that will give your player all playstyles in player career mode (Play As Player) and will reapply them after reset
 
@@ -39,11 +39,11 @@ function set_allplaystyles()
 
         current_record = players_table:GetNextValidRecord()
     end
-    LOGGER:LogError(string.format("Can't find player %d to apply 99ovr", PAP_PlayerID))
+    LOGGER:LogError(string.format("Can't find player %d to apply playstyles", PAP_PlayerID))
 end
 
 function handle_playstyles_reset(events_manager, event_id, event)
-    -- Events that reset the vpro attributes
+    -- Events that reset playstyles
     if (
         event_id == ENUM_CM_EVENT_MSG_USER_MATCH_COMPLETED or
         event_id == ENUM_CM_EVENT_MSG_USER_MATCH_COMPLETED_IN_TOURNAMENT or

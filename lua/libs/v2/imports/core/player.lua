@@ -1,8 +1,7 @@
 local PLAYER = {}
 
 function PLAYER:new()
-    o = o or {}
-    setmetatable(o, self)
+    local o = setmetatable({}, self)
 
     -- lua metatable
     self.__index = self
@@ -12,7 +11,7 @@ function PLAYER:new()
     self.month = DEFAULT_MONTH
     self.year = DEFAULT_YEAR
 
-    return o;
+    return o
 end
 
 return PLAYER;

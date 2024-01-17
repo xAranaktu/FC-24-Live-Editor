@@ -1,8 +1,7 @@
 local PLAYERS_MANAGER = {}
 
-function PLAYERS_MANAGER:new(o)
-    o = o or {}
-    setmetatable(o, self)
+function PLAYERS_MANAGER:new()
+    local o = setmetatable({}, self)
 
     -- lua metatable
     self.__index = self
@@ -10,7 +9,7 @@ function PLAYERS_MANAGER:new(o)
 
     self.db = nil
 
-    return o;
+    return o
 end
 
 function PLAYERS_MANAGER:Init(db)
