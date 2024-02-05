@@ -29,9 +29,9 @@ local teamplayerlinks_current_record = teamplayerlinks_table:GetFirstRecord()
 
 local playerid = 0
 while teamplayerlinks_current_record > 0 do
-    if user_teamid == teamplayerlinks_table:GetRecordFieldValue(current_record, "teamid") then
-        playerid = teamplayerlinks_table:GetRecordFieldValue(current_record, "playerid")
-        PlayerCaptureAddPlayer(playerid, teamid)
+    if user_teamid == teamplayerlinks_table:GetRecordFieldValue(teamplayerlinks_current_record, "teamid") then
+        playerid = teamplayerlinks_table:GetRecordFieldValue(teamplayerlinks_current_record, "playerid")
+        PlayerCaptureAddPlayer(playerid, user_teamid)
     end
 
     teamplayerlinks_current_record = teamplayerlinks_table:GetNextValidRecord()
