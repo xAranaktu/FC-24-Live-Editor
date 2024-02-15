@@ -5,6 +5,8 @@
 -- 4: Sporadic
 -- 5: Prospect
 
+require 'imports/career_mode/helpers'
+
 local squadrole = 3 -- Rotation
 
 -- Don't touch anything below
