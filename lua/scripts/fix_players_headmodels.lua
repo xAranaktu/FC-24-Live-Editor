@@ -4,7 +4,7 @@
 
 require 'imports/core/common'
 
--- List up to date with Title Update 9
+-- List up to date with Title Update 10
 local valid_headmodels = {
     [27] = true,    -- Joe Cole
     [42] = true,    -- Gareth Southgate
@@ -616,6 +616,7 @@ local valid_headmodels = {
     [176348] = true,    -- Yeom Ki Hun
     [176550] = true,    -- David Ospina
     [176571] = true,    -- Andre Ayew
+    [176580] = true,    -- Luis Suarez
     [176600] = true,    -- Kevin Gameiro
     [176733] = true,    -- Marcus Berg
     [176841] = true,    -- Lukas Jutkiewicz
