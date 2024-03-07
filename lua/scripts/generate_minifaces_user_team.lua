@@ -1,6 +1,8 @@
 -- Generate miniface for everyplayer in the user team
 -- May take around 5 mins to complete, so be patient.
 
+require 'imports/career_mode/helpers'
+
 -- Execute only if we are in career mode
 if not IsInCM() then return end
 
