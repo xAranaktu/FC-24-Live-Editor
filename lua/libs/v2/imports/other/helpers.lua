@@ -51,3 +51,30 @@ function GetPlayerIDSForTeam(teamid)
     return result
 end
 
+-- Return players that are goalkeepers
+function GetGoalkeepers()
+    local result = {}
+
+    -- Get all rows for players table
+    local players_table = LE.db:GetTable("players")
+    local players_current_record = players_table:GetFirstRecord()
+
+    local playerid = 0
+    local preferredposition1 = 0
+    while players_current_record > 0 do
+        preferredposition1 = players_table:GetRecordFieldValue(players_current_record, "preferredposition1")
+
+        -- If Is GK
+        if preferredposition1 == 0 then
+            -- Add to goalkeepers
+            playerid = players_table:GetRecordFieldValue(players_current_record, "playerid")
+            result[playerid] = true
+        end
+
+        players_current_record = players_table:GetNextValidRecord()
+    end
+
+    return result
+end
+
+

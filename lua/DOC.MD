@@ -1785,6 +1785,9 @@ PlayerCaptureAddPlayer(20801, GetTeamIdFromPlayerId(20801))
 -- Add Haaland Capture
 PlayerCaptureAddPlayer(239085, GetTeamIdFromPlayerId(239085))
 
+-- Add Marc-André ter Stegen Capture
+PlayerCaptureAddPlayer(192448, GetTeamIdFromPlayerId(192448), true)
+
 -- Start Capturing
 PlayerCaptureStart()
 ```
@@ -1797,7 +1800,7 @@ Call [PlayerCaptureStart](#PlayerCaptureStart) to start generating.
 - Can be executed only in Career Mode.
 ### Syntax
 ```
-void PlayerCaptureAddPlayer(int playerid, int teamid)
+void PlayerCaptureAddPlayer(int playerid, int teamid, bool is_gk)
 ```
 ### Return
 void
@@ -1832,6 +1835,9 @@ PlayerCaptureAddPlayer(20801, GetTeamIdFromPlayerId(20801))
 
 -- Add Haaland Capture
 PlayerCaptureAddPlayer(239085, GetTeamIdFromPlayerId(239085))
+
+-- Add Marc-André ter Stegen Capture
+PlayerCaptureAddPlayer(192448, GetTeamIdFromPlayerId(192448), true)
 
 -- Start Capturing
 PlayerCaptureStart()

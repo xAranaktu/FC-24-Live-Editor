@@ -1,6 +1,8 @@
 -- Generate miniface for everyplayer in playable league.
 -- THIS WILL TAKE A WHILE TO COMPLETE, like around 10h...
 -- and... if the game will crash (which is very possible) you will have to start from beginning...
+require 'imports/other/helpers'
+
 
 -- Execute only if we are in career mode
 if not IsInCM() then return end
@@ -36,6 +38,9 @@ PlayerCaptureSetSize(256, 256)
 -- 1 - DDS
 PlayerCaptureSetType(1)
 
+-- We need goalkeepers to generate proper kit.
+local goalkeepers = GetGoalkeepers()
+
 -- Get all rows for leagueteamlinks table
 local leagueteamlinks_table = LE.db:GetTable("leagueteamlinks")
 local leagueteamlinks_current_record = leagueteamlinks_table:GetFirstRecord()
@@ -62,7 +67,7 @@ while teamplayerlinks_current_record > 0 do
     teamid = teamplayerlinks_table:GetRecordFieldValue(teamplayerlinks_current_record, "teamid")
     if not BLACKLISTED_TEAMS[teamid] then
         playerid = teamplayerlinks_table:GetRecordFieldValue(teamplayerlinks_current_record, "playerid")
-        PlayerCaptureAddPlayer(playerid, teamid)
+        PlayerCaptureAddPlayer(playerid, teamid, goalkeepers[playerid] ~= nil)
     end
 
     teamplayerlinks_current_record = teamplayerlinks_table:GetNextValidRecord()

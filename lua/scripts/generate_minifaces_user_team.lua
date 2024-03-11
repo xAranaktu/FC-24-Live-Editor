@@ -2,6 +2,10 @@
 -- May take around 5 mins to complete, so be patient.
 
 require 'imports/career_mode/helpers'
+<<<<<<< Updated upstream
+=======
+require 'imports/other/helpers'
+>>>>>>> Stashed changes
 
 -- Execute only if we are in career mode
 if not IsInCM() then return end
@@ -23,6 +27,9 @@ PlayerCaptureSetSize(256, 256)
 -- 1 - DDS
 PlayerCaptureSetType(1)
 
+-- We need goalkeepers to generate proper kit.
+local goalkeepers = GetGoalkeepers()
+
 local user_teamid = GetUserTeamID()
 
 -- Get all rows for teamplayerlinks table
@@ -33,7 +40,7 @@ local playerid = 0
 while teamplayerlinks_current_record > 0 do
     if user_teamid == teamplayerlinks_table:GetRecordFieldValue(teamplayerlinks_current_record, "teamid") then
         playerid = teamplayerlinks_table:GetRecordFieldValue(teamplayerlinks_current_record, "playerid")
-        PlayerCaptureAddPlayer(playerid, user_teamid)
+        PlayerCaptureAddPlayer(playerid, user_teamid, goalkeepers[playerid] ~= nil)
     end
 
     teamplayerlinks_current_record = teamplayerlinks_table:GetNextValidRecord()
