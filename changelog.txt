@@ -1,3 +1,12 @@
+v24.1.1.5:
+    - It's now possible to connect to EA servers and download squadfiles when playing with live editor (no, you can't use LE in FUT)
+    - Replaced some of the messageboxes with notifications.
+    - Added "Aardvark Editor"
+    - Added some missing bodytypecodes to option picker
+    - Added option to filter players by their playstyles
+    - Added "Is Presigned" column to transfer history
+    - Fixed disappearing entries from transfer history when attempting to undo transfer for player with presigned contract
+
 v24.1.1.4:
     - Work with Title Update 8
 
