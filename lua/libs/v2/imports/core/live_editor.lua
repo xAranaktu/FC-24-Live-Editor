@@ -2,6 +2,7 @@ MEMORY = require 'imports/core/memory'
 LOGGER = require 'imports/core/logger'
 local DB = require 'imports/t3db/db'
 local GameplayAttribulatorManager = require 'imports/gameplay/gp_attribulator_manager'
+local AardvarkManager = require 'imports/aardvark/aardvark_manager'
 local PLAYERS_MANAGER = require 'imports/core/managers/players_manager'
 
 local LIVE_EDITOR = {}
@@ -25,6 +26,9 @@ function LIVE_EDITOR:new()
 
     -- Gameplay Attribulator Manager
     self.gameplay_attribulator_manager = GameplayAttribulatorManager:new()
+
+    -- AardvarkManager
+    self.aardvark_manager = AardvarkManager:new()
 
     -- Players Manager
     self.players_manager = PLAYERS_MANAGER:new()
