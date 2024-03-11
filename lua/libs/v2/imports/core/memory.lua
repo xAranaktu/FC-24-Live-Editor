@@ -37,7 +37,7 @@ function MEMORY:ReadChar(addr)
 end
 
 function MEMORY:ReadBool(addr)
-	return ReadChar(addr) > 0
+	return ReadBytes(addr, 1)[1] > 0
 end
 
 function MEMORY:ReadShort(addr)
