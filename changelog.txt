@@ -1,3 +1,8 @@
+v24.1.1.6:
+    - Fixed game crash when trying to open Players/Teams
+    - Fixed youth player minifaces not being shown in player editor
+    - Fixed transfer bans being wiped when checking transfer history (Thanks torinarg for finding where the issue is)
+
 v24.1.1.5:
     - It's now possible to connect to EA servers and download squadfiles when playing with live editor (no, you can't use LE in FUT)
     - Replaced some of the messageboxes with notifications.
