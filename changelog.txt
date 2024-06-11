@@ -1,3 +1,6 @@
+v24.1.1.7:
+    - Work with Title Update 15.1
+
 v24.1.1.6:
     - Fixed game crash when trying to open Players/Teams
     - Fixed youth player minifaces not being shown in player editor
