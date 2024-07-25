@@ -674,7 +674,7 @@ None
 ### Example
 ```
 -- Delete Messi
-DeletePlayer(158023)
+DeletePlayer(158023, 0)
 ```
 
 ## CreatePlayer
