@@ -795,6 +795,7 @@ local player_data = {
     playerjointeamdate = "160139",
     headclasscode = "0",
     defensiveworkrate = "0",
+    defensiveawareness = "26",
     tattoofront = "0",
     nationality = "37",
     preferredfoot = "2",
