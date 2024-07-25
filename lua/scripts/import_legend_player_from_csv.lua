@@ -200,5 +200,7 @@ function readCSV(filename)
 end
 
 -- Usage example
+-- Please change the filename to your own path
+-- You can download the csv file from https://www.mediafire.com/file/v006dt1yr9kl386/FIFA_24_LE_ICONS.csv/file
 local filename = "C:/Users/Veeja.Liu/Downloads/FC_24_LE_ICONS.csv"
-local data = readCSV(filename)
+readCSV(filename)
